@@ -166,14 +166,14 @@ class starEvolutionSimulator:
         ax.plot(msLogTeff, msLogLum, color=[.3, .3, .3], alpha=1, zorder=101)
         
         # plot planet orbits
-        orbitRad = [0.3870993, 0.72336, 1, 1.52371, 5.2029, 9.537, 19.189, 30.0699]
+        self.orbitRad = [0.3870993, 0.72336, 1, 1.52371, 5.2029, 9.537, 19.189, 30.0699]
         orbitColor = ['silver', 'w', 'lightblue', 'orange', 'ivory','goldenrod', 'cyan', 'turquoise']
         orbitLw = [1, 1.3, 2.5, 1.3, 1.5, 1.5, 1, 1]
         orbitAlpha = [0.2, 0.3, 0.5, 0.3, 0.3, 0.3, 0.2, 0.2]
         self.orbits = []
-        for i in range(len(orbitRad)):
+        for i in range(len(self.orbitRad)):
             self.orbits.append(ax.scatter(self.star.logTeff.values[0], self.star.logL.values[0],
-                          s=(self.solarSystemScale*orbitRad[i]*auInSolarRadii)**2, lw=orbitLw[i], edgecolors=orbitColor[i],
+                          s=(self.solarSystemScale*self.orbitRad[i]*auInSolarRadii)**2, lw=orbitLw[i], edgecolors=orbitColor[i],
                                facecolors='none', alpha=orbitAlpha[i], zorder=300))
                                
         # plot large scale references
@@ -279,6 +279,7 @@ class starEvolutionSimulator:
 
         self.paused = False
         fig.canvas.mpl_connect('button_press_event', self.toggle_pause)
+        fig.canvas.mpl_connect('key_press_event', self.key_pressed)
         
     def toggle_pause(self, *args, **kwargs):
         if self.paused:
@@ -286,6 +287,14 @@ class starEvolutionSimulator:
         else:
             self.animation.pause()
         self.paused = not self.paused
+        
+    def key_pressed(self, keyData):
+        if not self.paused: # don't scale when the animation is paused and the user can't see the result
+            if keyData.key == ',':
+                self.solarSystemScale = 1.2*self.solarSystemScale
+            elif keyData.key == '.':
+                self.solarSystemScale = self.solarSystemScale/1.2
+
 
     def animateStar(self, frame_num):
         ii = frame_num % self.star.shape[0]
@@ -300,10 +309,12 @@ class starEvolutionSimulator:
     
         for i in range(len(self.orbits)):
             self.orbits[i].set_offsets([self.star.logTeff.values[ii], self.star.logL.values[ii]])
+            self.orbits[i].set_sizes([(self.solarSystemScale*self.orbitRad[i]*auInSolarRadii)**2])
         # earthOrbit.set_offsets([self.star.logTeff.values[ii], self.star.logL.values[ii]])
         if self.solarSystemScale < largeReferenceThreshold:
             for i in range(len(self.largeReferenceCircles)):
                 self.largeReferenceCircles[i].set_offsets([self.star.logTeff.values[ii], self.star.logL.values[ii]])
+                self.largeReferenceCircles[i].set_sizes([(self.solarSystemScale*self.largeReferenceRad[i])**2])
                 # self.largeReferenceText[i].set_x(self.star.logTeff.values[ii]+0.0015*self.solarSystemScale*self.largeReferenceRad[i])
                 # # self.largeReferenceText[i].set_x(self.star.logTeff.values[ii])
                 # self.largeReferenceText[i].set_y(self.star.logL.values[ii])
