@@ -54,7 +54,7 @@ Most stars, for most of their lives, fall on a roughly diagonal line called the 
 
 Circles showing the average planet orbits are drawn to provide a sense of the scale of the star's radius.  The Earth's orbit is a thicker blue circle.  Later in the star's life, as the star becomes a red giant, you will see its size become larger than the orbits of Mercury and Venus.  The planet orbits only show their current (average) distance from the sun.  The animation does not account for how these orbits would change as the star changes mass.
 
-The habitable zone is the range of distances from a star where a planet would have the right temperature to allow liquid water.  A planet's temperature depends on the planet's atmosphere. There are two versions of the habitable zone: 
+The [habitable zone](https://en.wikipedia.org/wiki/Habitable_zone) is the range of distances from a star where a planet would have the right temperature to allow liquid water.  A planet's temperature depends on the planet's atmosphere. There are two versions of the habitable zone: 
 <ul>
   <li>The conservative habitable zone where temeratures on a planet would allow liquid water for most types of planet atmospheres</li>
   <li>The optimistic habitable zone, where temparatures might allow liquid water if the atmosphere were just right</li>
@@ -64,7 +64,7 @@ The conservative habitable zone is drawn in olive green, and the larger conserva
 
 <h5>Zooming Out</h5>
 
-You can set the Solar System scale either using command line arguments or with the ',' and '.' keys.  Zooming does not effect the HR diagram components such as the main sequence or the star location.  Zooming only changes the displayed star radius, planet orbits and the habitable zones.
+You can set the Solar System scale either using command line arguments or, while the animation is running, with the ',' and '.' keys.  Zooming does not effect the HR diagram components such as the main sequence or the star location.  Zooming only changes the displayed star radius, planet orbits and the habitable zones.
 
 If you start up with <code>python star_evolution_animation.py -s 20</code>, you'll see the planets out to Uranus.  If you let the animation run to the end of the star's life, you'll see that the star becomes almost as big as the Earth's orbit:
 
