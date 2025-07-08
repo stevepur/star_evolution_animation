@@ -17,7 +17,7 @@ ___
 
 <h3>Introduction<a id="intro"></a></h3>
 
-An animation of stellar evolution, showing both motion on the HR diagram and changes in the star size and habitable zones.  This animation is based on [Tim Morton's isochrones package](https://isochrones.readthedocs.io/en/latest/) and [Kopperapu et al's definition of the habitable zone](https://iopscience.iop.org/article/10.1088/0004-637X/765/2/131)
+This python script is an animation of stellar evolution, showing both motion on the HR diagram and changes in the star size and habitable zones.  This animation is based on [Tim Morton's isochrones package](https://isochrones.readthedocs.io/en/latest/) and [Kopperapu et al's definition of the habitable zone](https://iopscience.iop.org/article/10.1088/0004-637X/765/2/131)
 
 If you run for a little while with the command <code>python star_evolution_animation.py</code>, you'll see something like this:
 ![startup image](./images/startup.png)
