@@ -130,6 +130,7 @@ While the animation is running, you can
 <ul>
   <li>Right-click in the animation window to pause and resume the animation.</li>
   <li>Press the ',' and '.' key to zoom the scale in and out.  This does not work when the animation is paused.</li>
+  <li>You can resize the figure by grabbing a corner at any time</li>
 </ul>
 
 ___
