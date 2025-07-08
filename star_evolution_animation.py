@@ -28,7 +28,7 @@ def radius_text(radius):
     formatStr = "{:." + str(3) + "f}"    
     rStr = "Radius: " + formatStr.format(radius) + " Solar Radii" 
     if radius < 0.08:
-        rStr = rStr + ", " + formatStr.format(radius/earthToSunRadius) + " Earth Radii"
+        rStr = rStr + " = " + formatStr.format(radius/earthToSunRadius) + " Earth Radii"
     return rStr
 
 def star_color(logTeff):
