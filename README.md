@@ -50,11 +50,11 @@ The star's position on the HR diagram is determined by its effective temperature
 
 Most stars, for most of their lives, fall on a roughly diagonal line called the Main Sequence.  The star's location on the main sequence is determined primarily by its mass and metalicity (fraction of elements heavier than helium).  The main sequence of a middle-aged star is shown by a grey mostly diagonal curve.  The faint grey dots are a subset of stars from the [Gaia catalog of nearby stars](https://gucds.inaf.it/GCNS/Original/).
 
-<h4>Star Size Features</h4>
+<h4>Star Size Features and the Habitable Zone</h4>
 
 Circles showing the average planet orbits are drawn to provide a sense of the scale of the star's radius.  The Earth's orbit is a thicker blue circle.  Later in the star's life, as the star becomes a red giant, you will see its size become larger than the orbits of Mercury and Venus.  The planet orbits only show their current (average) distance from the sun.  The animation does not account for how these orbits would change as the star changes mass.
 
-The habitable zone is the range of distances from a star where a planet would have the right temperature to allow liquid water.  A planet's temperature depends on the planet's atmosphere. There are two versions of the habitable zone: 
+The [habitable zone](https://en.wikipedia.org/wiki/Habitable_zone) is the range of distances from a star where a planet would have the right temperature to allow liquid water.  A planet's temperature depends on the planet's atmosphere. There are two versions of the habitable zone: 
 <ul>
   <li>The conservative habitable zone where temeratures on a planet would allow liquid water for most types of planet atmospheres</li>
   <li>The optimistic habitable zone, where temparatures might allow liquid water if the atmosphere were just right</li>
@@ -62,18 +62,24 @@ The habitable zone is the range of distances from a star where a planet would ha
 
 The conservative habitable zone is drawn in olive green, and the larger conservative habitable zone is drawn in dark green.  As the star's size and brightness changes, the habitable zone's size will change: a brighter and/or larger star will cause the habitable zone to more outwards.
 
+**CAVEAT: the habitable zone model we use was developed for stellar temperatures between 2,600 K and 7,200 K, so the habitable zone for the late stages of the star's life, when it is much hotter than 7,200 K, is probably very wrong.**
+
 <h5>Zooming Out</h5>
 
-You can set the Solar System scale either using command line arguments or with the ',' and '.' keys.  Zooming does not effect the HR diagram components such as the main sequence or the star location.  Zooming only changes the displayed star radius, planet orbits and the habitable zones.
+You can set the Solar System scale either using command line arguments or, while the animation is running, with the ',' and '.' keys.  Zooming does not effect the HR diagram components such as the main sequence or the star location.  Zooming only changes the displayed star radius, planet orbits and the habitable zones.
 
 If you start up with <code>python star_evolution_animation.py -s 20</code>, you'll see the planets out to Uranus.  If you let the animation run to the end of the star's life, you'll see that the star becomes almost as big as the Earth's orbit:
+
 ![startup image](./images/s_20_annotated.png)
+
 You can't see the habitable zone because it has become much larger than Uranus' orbit.  
 
 If you start up with <code>python star_evolution_animation.py -s 5000</code> and run to about the same time, you'll see the habitable zone.  Because there are no planet orbits at this scale, green circles are drawn at 100, 200, 500, 1000, 2000, 3000, 4000, and 5000 Astronomical Units (AU).  We also see a white circle at 0.1 light years (ly).  Because the star is a red giant the habitable zone reaches out almost to 0.1 light years!
+
 ![startup image](./images/s_5000_annotated.png)
 
 We can zoom out a factor of 10 further by starting with <code>python star_evolution_animation.py -s 50000</code>.  We now see white circles at 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, and 0.9 light years (ly).  If we run to slightly later in the star's life, we see the habitable zone reaches out beyond 0.1 light years (for a very short time).  
+
 ![startup image](./images/s_50000_annotated.png)
 
 If we ran with a more massive star, for example <code>python star_evolution_animation.py -m 5 -s 50000</code>, the habitable zone would run out beyond 0.9 light years.
@@ -126,6 +132,7 @@ While the animation is running, you can
 <ul>
   <li>Right-click in the animation window to pause and resume the animation.</li>
   <li>Press the ',' and '.' key to zoom the scale in and out.  This does not work when the animation is paused.</li>
+  <li>You can resize the figure by grabbing a corner at any time</li>
 </ul>
 
 ___
