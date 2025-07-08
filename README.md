@@ -50,7 +50,7 @@ The star's position on the HR diagram is determined by its effective temperature
 
 Most stars, for most of their lives, fall on a roughly diagonal line called the Main Sequence.  The star's location on the main sequence is determined primarily by its mass and metalicity (fraction of elements heavier than helium).  The main sequence of a middle-aged star is shown by a grey mostly diagonal curve.  The faint grey dots are a subset of stars from the [Gaia catalog of nearby stars](https://gucds.inaf.it/GCNS/Original/).
 
-<h4>Star Size Features</h4>
+<h4>Star Size Features and the Habitable Zone</h4>
 
 Circles showing the average planet orbits are drawn to provide a sense of the scale of the star's radius.  The Earth's orbit is a thicker blue circle.  Later in the star's life, as the star becomes a red giant, you will see its size become larger than the orbits of Mercury and Venus.  The planet orbits only show their current (average) distance from the sun.  The animation does not account for how these orbits would change as the star changes mass.
 
