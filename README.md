@@ -62,6 +62,8 @@ The [habitable zone](https://en.wikipedia.org/wiki/Habitable_zone) is the range 
 
 The conservative habitable zone is drawn in olive green, and the larger conservative habitable zone is drawn in dark green.  As the star's size and brightness changes, the habitable zone's size will change: a brighter and/or larger star will cause the habitable zone to more outwards.
 
+**CAVEAT: the habitable zone model we use was developed for stellar temperatures between 2,600 K and 7,200 K, so the habitable zone for the late stages of the star's life, when it is much hotter than 7,200 K, is probably very wrong.**
+
 <h5>Zooming Out</h5>
 
 You can set the Solar System scale either using command line arguments or, while the animation is running, with the ',' and '.' keys.  Zooming does not effect the HR diagram components such as the main sequence or the star location.  Zooming only changes the displayed star radius, planet orbits and the habitable zones.
