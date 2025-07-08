@@ -5,7 +5,13 @@
 
 <h3>Introduction<a id="intro"></a></h3>
 
-An animation of stellar evolution, showing both motion on the HR diagram and changes in the star size and habitable zone.  This animation is based on [Tim Morton's isochrones package](https://isochrones.readthedocs.io/en/latest/) and [Kopperapu et al's definition of the habitable zone](https://iopscience.iop.org/article/10.1088/0004-637X/765/2/131)
+An animation of stellar evolution, showing both motion on the HR diagram and changes in the star size and habitable zones.  This animation is based on [Tim Morton's isochrones package](https://isochrones.readthedocs.io/en/latest/) and [Kopperapu et al's definition of the habitable zone](https://iopscience.iop.org/article/10.1088/0004-637X/765/2/131)
+
+Star_evolution_animation plots two kinds of things on the same figure:
+<ul>
+  <li>The star's ***position*** on the HR diagram with coordinates (effective temperature, intrinsic brightness).</li>
+  <li>The star's ***radius*** in arbitrary units that have nothing to do with the HR diagram.  The radii of the habitable zones Solar System classical planet orbits, and large reference circles are shown on the same scale.  Below, this scale is called the Solar System Scale.</li>
+</ul>
 
 ![startup image](./images/startup_annotated.png)
 
