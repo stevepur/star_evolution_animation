@@ -1,10 +1,21 @@
+1. [Introduction](#intrp)
+2. [How to Install](#install)
+3. [How to Run](#run)
+4. [Interaction During the Animation](#interact)
+
+<h3>Introduction<a id="intro"></a></h3>
+
 An animation of stellar evolution, showing both motion on the HR diagram and changes in the star size and habitable zone.  This animation is based on [Tim Morton's isochrones package](https://isochrones.readthedocs.io/en/latest/) and [Kopperapu et al's definition of the habitable zone](https://iopscience.iop.org/article/10.1088/0004-637X/765/2/131)
+
+![startup image](./images/startup_annotated.png)
+
+<h3>How to Install<a id="install"></a></h3>
 
 Requirements: a good scientific python 3.10 or later environment that includes the astropy package.  Installing Anaconda is the easiest way to create this environment.
 
 You need the isochrones package, which can be installed with <code>pip install isochrones</code>
 
-<h3>How to Run</h3>
+<h3>How to Run<a id="run"></a></h3>
 
 Clone or download this repository.  Then in the repository directory, run by typing the following on the command line:
 <code>python star_evolution_animation.py</code>,
@@ -33,11 +44,11 @@ options:
                         Solar System scale
 </pre>
 
-<h3>Interaction During the Animation</h3>
+Star_evolution_animation uses grids in stellar mass and metallicity from the isochrones package.  If you specify a mass or metallicity that is not on that grid, the mass or metallicity will be rounded up to the next value that is on the grid.
+
+<h3>Interaction During the Animation<a id="interact"></h3>
 While the animation is running, you can 
 <ul>
   <li>Right-click in the animation window to pause and resume the animation.</li>
   <li>Press the ',' and '.' key to zoom the scale in and out.  This does not work when the animation is paused.</li>
 </ul>
-
-![startup image](./images/startup_annotated.png)
