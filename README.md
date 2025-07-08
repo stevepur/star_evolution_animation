@@ -9,8 +9,8 @@ An animation of stellar evolution, showing both motion on the HR diagram and cha
 
 Star_evolution_animation plots two kinds of things on the same figure:
 <ul>
-  <li>The star's ***position*** on the HR diagram with coordinates (effective temperature, intrinsic brightness).</li>
-  <li>The star's ***radius*** in arbitrary units that have nothing to do with the HR diagram.  The radii of the habitable zones Solar System classical planet orbits, and large reference circles are shown on the same scale.  Below, this scale is called the Solar System Scale.</li>
+  <li>The star's _position_ on the HR diagram with coordinates (effective temperature, intrinsic brightness).</li>
+  <li>The star's _radius_ in arbitrary units that have nothing to do with the HR diagram.  The radii of the habitable zones Solar System classical planet orbits, and large reference circles are shown on the same scale.  Below, this scale is called the Solar System Scale.</li>
 </ul>
 
 ![startup image](./images/startup_annotated.png)
