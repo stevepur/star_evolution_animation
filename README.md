@@ -3,6 +3,7 @@
 <ul>
   <li> Download/clone this repository, and cd into its directory in a terminal
   <li> <code>pip install isochrones</code> (just the first time)
+  <li> <code>pip install numba</code> (just the first time)
   <li> <code>python star_evolution_animation.py</code>
 </ul>
 
