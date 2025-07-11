@@ -6,7 +6,7 @@
   <li> <code>pip install numba</code> (just the first time)
   <li> <code>python star_evolution_animation.py</code>
 </ul>
-
+The first time you run anything use isochrones, isochrones will compute several large arrays which takes 10 to 15 minutes.  After this first time the program starts very quickly.
 ___
 
 1. [Introduction](#intrp)
@@ -91,8 +91,9 @@ ___
 
 Requirements: a good scientific python 3.10 or later environment that includes the astropy package.  Installing Anaconda is the easiest way to create this environment.
 
-You need the isochrones package, which can be installed with <code>pip install isochrones</code>
+You need the isochrones and numba packages, which can be installed with <code>pip install isochrones</code> and  <code>pip install numba</code>
 
+The first time you run anything use isochrones, isochrones will compute several large arrays which takes 10 to 15 minutes.  After this first time the program starts very quickly.
 ___
 
 <h3>How to Run<a id="run"></a></h3>
