@@ -95,13 +95,15 @@ Requirements: a good scientific python 3.10 or later environment that includes t
 
 You need the isochrones and numba packages, which can be installed with <code>pip install isochrones</code> and  <code>pip install numba</code>
 
+Clone or download this repository.  
+
 The first time you run anything use isochrones, isochrones will compute several large arrays which takes 10 to 15 minutes.  After this first time the program starts very quickly.
 
 ___
 
 <h3>How to Run<a id="run"></a></h3>
 
-Clone or download this repository.  Then in the repository directory, run by typing the following on the command line:
+In the repository directory, run by typing the following on the command line:
 <code>python star_evolution_animation.py</code>,
 which simulates a 1 Solar mass star with Solar metallicity.
 
