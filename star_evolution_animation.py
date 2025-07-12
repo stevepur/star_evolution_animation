@@ -243,9 +243,7 @@ class starEvolutionSimulator:
         self.instellationText = ax.text(self.xl[0]-0.02, self.yl[0]+0.4, 
                                         instellation_text(self.star.radius.values[0], self.star.logTeff.values[0]), 
                                         fontsize=textFontSize, c='w', zorder=300)
-        
-        hz = np.nan_to_num(get_hz_boundaries(self.star.radius.values, self.star.logTeff.values), nan=0.1)
-        
+                
         self.timeLum = self.yl[0]+0.3 # at bottom
         # self.timeLum = self.yl[1]-0.3 # at top
         ax.plot(self.xl, [self.timeLum, self.timeLum], 'w', lw=2, alpha=0.5, zorder=300)
