@@ -3,8 +3,10 @@
 <ul>
   <li> Download/clone this repository, and cd into its directory in a terminal
   <li> <code>pip install isochrones</code> (just the first time)
+  <li> <code>pip install numba</code> (just the first time)
   <li> <code>python star_evolution_animation.py</code>
 </ul>
+The first time you run anything use isochrones, isochrones will compute several large arrays which takes 10 to 15 minutes.  After this first time the program starts very quickly.
 
 ___
 
@@ -17,7 +19,7 @@ ___
 
 <h3>Introduction<a id="intro"></a></h3>
 
-An animation of stellar evolution, showing both motion on the HR diagram and changes in the star size and habitable zones.  This animation is based on [Tim Morton's isochrones package](https://isochrones.readthedocs.io/en/latest/) and [Kopperapu et al's definition of the habitable zone](https://iopscience.iop.org/article/10.1088/0004-637X/765/2/131)
+This python script is an animation of stellar evolution, showing both motion on the HR diagram and changes in the star size and habitable zones.  This animation is based on [Tim Morton's isochrones package](https://isochrones.readthedocs.io/en/latest/) and [Kopperapu et al's definition of the habitable zone](https://iopscience.iop.org/article/10.1088/0004-637X/765/2/131)
 
 If you run for a little while with the command <code>python star_evolution_animation.py</code>, you'll see something like this:
 ![startup image](./images/startup.png)
@@ -90,7 +92,9 @@ ___
 
 Requirements: a good scientific python 3.10 or later environment that includes the astropy package.  Installing Anaconda is the easiest way to create this environment.
 
-You need the isochrones package, which can be installed with <code>pip install isochrones</code>
+You need the isochrones and numba packages, which can be installed with <code>pip install isochrones</code> and  <code>pip install numba</code>
+
+The first time you run anything use isochrones, isochrones will compute several large arrays which takes 10 to 15 minutes.  After this first time the program starts very quickly.
 
 ___
 
