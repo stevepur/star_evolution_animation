@@ -76,15 +76,13 @@ If you start up with <code>python star_evolution_animation.py -s 20</code>, you'
 
 You can't see the habitable zone because it has become much larger than Uranus' orbit.  
 
-If you start up with <code>python star_evolution_animation.py -s 5000</code> and run to about the same time, you'll see the habitable zone.  Because there are no planet orbits at this scale, green circles are drawn at 100, 200, 500, 1000, 2000, 3000, 4000, and 5000 Astronomical Units (AU).  We also see a white circle at 0.1 light years (ly).  Because the star is a red giant the habitable zone reaches out almost to 0.1 light years!
+If you start up with <code>python star_evolution_animation.py -s 5000</code> and run to about the same time, you'll see the habitable zone.  Because there are no planet orbits at this scale, green circles are drawn at 100, 200, 300, 400, 500, 600, 700, and 800 Astronomical Units (AU).  
 
-![startup image](./images/s_5000_annotated.png)
+![startup image](./images/s_550_annotated.png)
 
-We can zoom out a factor of 10 further by starting with <code>python star_evolution_animation.py -s 50000</code>.  We now see white circles at 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, and 0.9 light years (ly).  If we run to slightly later in the star's life, we see the habitable zone reaches out beyond 0.1 light years (for a very short time).  
+If we run with a 20 Solar mass star with <code>python star_evolution_animation.py -m 20 -s 50000</code>, we see that late in the star's life the habitable zone runs out to hundreds of AU.
 
-![startup image](./images/s_50000_annotated.png)
-
-If we ran with a more massive star, for example <code>python star_evolution_animation.py -m 5 -s 50000</code>, the habitable zone would run out beyond 0.9 light years.
+![startup image](./images/s_550_m20_annotated.png)
 
 ___
 
