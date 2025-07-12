@@ -6,6 +6,9 @@
   <li> <code>pip install numba</code> (just the first time)
   <li> <code>python star_evolution_animation.py</code>
 </ul>
+
+Exit the program by closing the animation window.
+
 The first time you run anything use isochrones, isochrones will compute several large arrays which takes 10 to 15 minutes.  After this first time the program starts very quickly.
 
 ___
@@ -126,6 +129,8 @@ options:
 </pre>
 
 Star_evolution_animation uses grids in stellar mass and metallicity from the isochrones package.  If you specify a mass or metallicity that is not on that grid, the mass or metallicity will be rounded up to the next value that is on the grid.
+
+Exit the program by closing the animation window.
 
 ___
 
