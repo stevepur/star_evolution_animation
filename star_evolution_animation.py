@@ -87,7 +87,7 @@ def get_hz_flux(teff, hzType = "conservative"):
     return hz
 
 def get_hz_boundaries(radius, logTeff, hzType = "conservative"):
-    teff = 10**logTeff
+    teff = np.clip(10**logTeff, 2600, 7200)
     hzFlux = get_hz_flux(teff, hzType)
     return (radius * (teff/5778)**2)/np.sqrt(np.abs(hzFlux))
 
