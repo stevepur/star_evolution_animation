@@ -179,7 +179,7 @@ class starEvolutionSimulator:
                                facecolors='none', alpha=orbitAlpha[i], zorder=300))
                                
         # plot large scale references
-        refInAu = np.array([100, 200, 500, 1000, 2000, 3000, 4000, 5000])
+        refInAu = np.array([100, 200, 300, 400, 500, 600, 700, 800])
         self.largeReferenceCircles = []
         self.largeReferenceRad = []
         self.largeReferenceText = []
@@ -193,13 +193,13 @@ class starEvolutionSimulator:
             # self.largeReferenceText.append(ax.text(self.star.logTeff.values[0]-self.solarSystemScale*r,
             #                                           self.star.logL.values[0], str(refInAu[i]) + " AU", fontsize=textFontSize, c='c',
             #                                           alpha=0.5, zorder=300))
-        refInLy = np.arange(0.1, 1, 0.1)
-        for i in range(len(refInLy)):
-            r = refInLy[i]*lyInAu*auInSolarRadii
-            self.largeReferenceRad.append(r)
-            self.largeReferenceCircles.append(ax.scatter(self.star.logTeff.values[0], self.star.logL.values[0],
-                  s=(self.solarSystemScale*r)**2, lw=1, ls="-", edgecolors='w',
-                       facecolors='none', alpha=0.5, zorder=300))
+        # refInLy = np.arange(0.1, 1, 0.1)
+        # for i in range(len(refInLy)):
+        #     r = refInLy[i]*lyInAu*auInSolarRadii
+        #     self.largeReferenceRad.append(r)
+        #     self.largeReferenceCircles.append(ax.scatter(self.star.logTeff.values[0], self.star.logL.values[0],
+        #           s=(self.solarSystemScale*r)**2, lw=1, ls="-", edgecolors='w',
+        #                facecolors='none', alpha=0.5, zorder=300))
             # # self.largeReferenceText.append(ax.text(self.star.logTeff.values[0]-self.solarSystemScale*r,
             # #                                           self.star.logL.values[0], str(refInLy[i]) + " ly", fontsize=textFontSize, c='c',
             # #                                           alpha=0.5, zorder=300))
