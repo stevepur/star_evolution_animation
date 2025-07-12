@@ -82,7 +82,7 @@ If you start up with <code>python star_evolution_animation.py -s 5000</code> and
 
 If we run with a 20 Solar mass star with <code>python star_evolution_animation.py -m 20 -s 50000</code>, we see that late in the star's life the habitable zone runs out to hundreds of AU.
 
-![startup image](./images/s_550_m20_annotated.png)
+![startup image](./images/s_550_m_20.png)
 
 ___
 
