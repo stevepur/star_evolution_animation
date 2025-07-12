@@ -39,7 +39,7 @@ def star_color(logTeff):
     return starColor
 
 def earthInstellation(radius, logTeff):
-    teff = 10**logTeff/5778
+    teff = (10**logTeff)/5778
     return radius**2 * teff**4
     
 def instellation_text(radius, logTeff):
@@ -96,6 +96,8 @@ class starEvolutionSimulator:
         self.solarSystemScale = 3/ssScale # 3 is a good default, larger ssScale shows more of the solar system
         
         grid_tracks = MISTEvolutionTrackGrid()
+        if grid_tracks.df.index.names[0] is None:
+            grid_tracks.df.index.set_names(['initial_feh', 'initial_mass', 'EEP'], inplace=True)
         minLum = -3.4
         
         # stars from the Gaia catalog of nearby stars https://gucds.inaf.it/GCNS/Original/
