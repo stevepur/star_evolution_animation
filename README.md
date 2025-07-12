@@ -71,7 +71,7 @@ The conservative habitable zone is drawn in olive green, and the larger optimist
 
 <h5>Zooming Out</h5>
 
-You can set the Solar System scale either using the -s command line argument or, while the animation is running, with the ',' and '.' keys.  Zooming does not effect the HR diagram components such as the main sequence or the star location.  Zooming only changes the displayed star radius, planet orbits and the habitable zones.
+You can set the Solar System scale either using the [-s command line argument](#run) or, while the animation is running, with the ',' and '.' keys.  Zooming does not effect the HR diagram components such as the main sequence or the star location.  Zooming only changes the displayed star radius, planet orbits and the habitable zones.
 
 If you start up with <code>python star_evolution_animation.py -s 20</code>, you'll see the planets out to Uranus.  If you let the animation run to the end of the star's life, you'll see that the star becomes almost as big as the Earth's orbit:
 
