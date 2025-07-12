@@ -89,7 +89,7 @@ def get_hz_flux(teff, hzType = "conservative"):
 def get_hz_boundaries(radius, logTeff, hzType = "conservative"):
     teff = 10**logTeff
     hzFlux = get_hz_flux(teff, hzType)
-    return (radius**2 * (teff/5778)**4)/np.sqrt(np.abs(hzFlux))
+    return (radius * (teff/5778)**2)/np.sqrt(np.abs(hzFlux))
 
 class starEvolutionSimulator:
     def __init__(self, starMass = 1, starMetallicity = 0, ssScale = 3):
